@@ -1,0 +1,45 @@
+baseurl                 = "omochiya.net"
+DefaultContentLanguage  = "ja"
+title                   = "Omochiya Engineering Blog"
+theme                   = "hugo-future-imperfect-slim"
+paginate                = 5
+disqusShortname         = ""
+googleAnalytics         = ""
+pluralizeListTitles     = false
+disableLanguages        = []
+
+[markup.goldmark.renderer]
+  unsafe                = true
+
+[outputs]
+  home                  = ["html", "json"]
+
+
+[params]
+  enableCDN             = false
+  cssFiles              = ["default"]
+  jsFiles               = ["default"]
+  highlightjs           = true
+  highlightjsTheme      = "default"
+  highlightjsLang       = []
+  viewMorePostsLink     = "/blog/"
+  readingTime           = true
+  imageStrech           = ""
+  socialShare           = ["twitter"]
+
+[params.header]
+	navbarTitle         = "Omochiya Engineering"
+	dynamicTitles       = true
+	searchMenu          = true
+	shareMenu           = true
+	languageMenu        = false
+
+[params.sidebar]
+  about               = "ゲームプログラマのつぶやき"
+  postAmount          = 5
+  categories          = false
+  categoriesByCount   = false
+
+[params.footer]
+  rssFooter           = false
+  socialFooter        = false
